@@ -1,5 +1,7 @@
 package com.example.demo.taskSchedule;
 
+import java.time.LocalDateTime;
+
 import org.springframework.scheduling.annotation.Scheduled;
 
 public class ScheduleTask {
@@ -8,7 +10,7 @@ public class ScheduleTask {
     public void runMigrationCheck() {
 
         // This method will be called at the scheduled time
-        System.out.println("Scheduled task executed at: " + System.currentTimeMillis());
+        System.out.println("Scheduled task executed at: " + LocalDateTime.now());
     }
 
 }
